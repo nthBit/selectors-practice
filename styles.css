@@ -1,30 +1,36 @@
 body {
   font: 1.2em / 1.5 sans-serif;
 }
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 0.5em;
+}
+
+a {
+  display: block;
+  padding: 0.5em;
+}
+
+a {
+  border: 5px solid grey;
+}
+
 /* Add styles here */
 
-a:link {
-    color: orange;
+a[title] {
+    border-color: pink;
 }
 
-a:visited {
-    color: green;
+a[href*="contact"] {
+    border-color: orange;
 }
 
-a:hover {
-    text-decoration: none;
+a[href^="https"] {
+    border-color: green;
 }
-
-.container:first-child {
-    font-size: 150%;
-}
-
-.container p:first-child::first-line{
-    color: red;
-}
-
-tr:nth-child(2n) {
-    background-color: #333333;
-    color: white;
-}
-
