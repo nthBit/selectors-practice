@@ -3,7 +3,28 @@ body {
 }
 /* Add styles here */
 
-h1 {
-    color: blue;
+a:link {
+    color: orange;
+}
+
+a:visited {
+    color: green;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.container:first-child {
+    font-size: 150%;
+}
+
+.container p:first-child::first-line{
+    color: red;
+}
+
+tr:nth-child(2n) {
+    background-color: #333333;
+    color: white;
 }
 
